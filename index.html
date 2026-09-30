@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New_Momentum Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for professional typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="environment-overlay"></div>
+
+  <!-- Top Bar: Live Market Tickers -->
+  <div id="ticker-bar">
+    <div id="ticker-container"></div>
+  </div>
+
+  <!-- Top Left: Weather & Hydration Tracker -->
+  <div class="glass-panel" id="top-left-widget">
+    <div id="weather-display">🌤️ 72°F | Sunny in Lisbon</div>
+    <div class="divider"></div>
+    <h4 class="widget-title">Daily Hydration</h4>
+    <div id="glass-container"></div>
+  </div>
+
+  <!-- Top Right: Social Status -->
+  <div class="glass-panel icon-btn" id="social-square" title="View Friends">
+    👥<div class="notification-dot"></div>
+  </div>
+  <div class="glass-panel hidden" id="social-modal">
+    <h3 class="widget-title">Friend Status</h3>
+    <p><strong>Alex:</strong> Central Park, NY</p>
+    <p class="subtext">"Working on the Q3 report until 5 PM."</p>
+  </div>
+
+  <!-- Center: Classic Momentum + Gamified Accountability -->
+  <div class="center-container">
+    <h1 id="time-display">00:00</h1>
+    <h2 id="greeting-display">Good morning.</h2>
+    
+    <!-- Daily Goal -->
+    <div class="goal-module">
+      <p class="goal-label">What is your main focus for today?</p>
+      <input type="text" id="daily-goal-input" autocomplete="off" placeholder="Type your goal and press Enter..." />
+      <div id="active-goal-container" class="hidden">
+        <label class="custom-checkbox">
+          <input type="checkbox" id="goal-checkbox">
+          <span class="checkmark"></span>
+          <span id="active-goal-text"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Cute Virtual Pet & Controls -->
+    <div class="glass-panel accountability-module">
+      <div class="duck-ring" id="duck-ring">
+        <span id="duck-avatar">🦆</span>
+      </div>
+      <p id="duck-status">Ready to conquer the day!</p>
+      
+      <div class="task-controls">
+        <button class="pro-btn success" id="btn-complete-task">Task Complete</button>
+        <button class="pro-btn danger" id="btn-miss-deadline">Miss Deadline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Left: Contextual Audio -->
+  <div class="glass-panel" id="audio-widget">
+    <h4 class="widget-title">Atmosphere Sync</h4>
+    <p id="song-title" class="truncate">Here Comes The Sun - The Beatles</p>
+    <button class="pro-btn outline" id="btn-play-next">Skip Track</button>
+  </div>
+
+  <!-- Bottom Center: Quote of the Day -->
+  <div id="quote-container">
+    <p id="quote-text">"The secret of getting ahead is getting started."</p>
+    <p id="quote-author">Mark Twain</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
