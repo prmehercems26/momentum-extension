@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New_Momentum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dynamic Environment Background -->
+  <div id="environment-overlay"></div>
+
+  <!-- Top Bar: Live Market Tickers (Requisite 5) -->
+  <div id="ticker-bar">
+    <div id="ticker-container">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- Top Left: Cute Hydration Tracker (Requisite 3) -->
+  <div id="hydration-widget">
+    <h4>Daily Hydration</h4>
+    <div id="glass-container">
+      <!-- 8 Glasses populated by JS -->
+    </div>
+  </div>
+
+  <!-- Top Right: Social Status Popup (Requisite 4) -->
+  <div id="social-square" title="View Friends">
+    <div class="notification-dot"></div>
+  </div>
+
+  <!-- Social Modal -->
+  <div id="social-modal" class="hidden">
+    <h3>Friend Status</h3>
+    <p><strong>Alex:</strong> Central Park, NY</p>
+    <p><em>"Working on the Q3 report until 5 PM."</em></p>
+  </div>
+
+  <!-- Center: Gamified Focus & Accountability (Requisite 1) -->
+  <div class="center-container">
+    <h2 id="focus-timer">Focus Time: 2h 15m</h2>
+    <p id="current-task">Current: Draft marketing copy</p>
+    
+    <!-- Virtual Pet -->
+    <div id="avatar-container">
+      <span id="duck-avatar">🦆</span>
+      <p id="duck-status">Ready to work!</p>
+    </div>
+    
+    <div class="task-controls">
+      <button id="btn-complete-task">Mark Complete</button>
+      <button id="btn-miss-deadline">Simulate Missed Deadline</button>
+    </div>
+  </div>
+
+  <!-- Bottom Left: Contextual Audio Widget (Requisite 2) -->
+  <div id="audio-widget">
+    <div class="weather-info">🌤️ 72°F | Sunny</div>
+    <div class="player">
+      <p id="song-title">Here Comes The Sun - The Beatles</p>
+      <button id="btn-play-next">Play Next Matched Song</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

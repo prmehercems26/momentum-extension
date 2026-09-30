@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "New_Momentum",
+  "version": "1.1",
+  "description": "Dynamic focus, contextual audio, hydration tracking, social status, and market tickers.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "geolocation"
+  ]
+}
